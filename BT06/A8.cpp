@@ -12,8 +12,7 @@ void combination(int data[], int start, int end, int index, int k)
         return;
     }
 
-    for (int i = start; i <= end &&
-        end - i + 1 >= k - index; i++)
+    for (int i = start; i <= end && end - i + 1 >= k - index; i++)
     {
         data[index] = i;
         combination(data, i+1, end, index+1, k);
